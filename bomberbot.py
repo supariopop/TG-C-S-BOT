@@ -3039,7 +3039,7 @@ async def user_cancel(cq: CallbackQuery, state: FSMContext):
     await cq.answer()
 
 async def main():
-    bot = Bot(token=BOT_TOKEN, parse_mode="HTML")
+    bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
     storage = MemoryStorage()
     dp = Dispatcher(storage=storage)
     dp.include_router(R)
