@@ -9,6 +9,7 @@ from keep_alive import keep_alive   # 👈 ye line add karo
 from aiogram import Bot, Dispatcher, F, Router
 import aiohttp
 from aiogram import Bot, Dispatcher, F, Router
+from aiogram.client.default import DefaultBotProperties
 from aiogram.types import (
     Message, CallbackQuery,
     InlineKeyboardMarkup, InlineKeyboardButton,
